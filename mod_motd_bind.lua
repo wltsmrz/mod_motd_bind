@@ -15,4 +15,4 @@ module:hook("resource-bind", function(event)
   local message = st.message({ to = jid, from = motd_jid }, motd_text);
   session.send(message);
   module:log("debug", "MOTD send to user %s", session.full_jid);
-end, 999);
+end, 99);
